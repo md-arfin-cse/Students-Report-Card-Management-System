@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<welcome-file-list>
+	 <welcome-file>Home.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<context-param>   
+    	<param-name>driver</param-name>
+    	<param-value>com.mysql.jdbc.Driver</param-value>
+  	 </context-param>
+  	
+
+	<context-param>   
+    	<param-name>url</param-name>
+    	<param-value>jdbc:mysql://localhost:3306/srp</param-value>
+  	 </context-param>
+  	
+  	<context-param>
+    	<param-name>user</param-name>
+    	<param-value>root</param-value>
+  	</context-param>
+  	
+  	<context-param>
+    	<param-name>dbpassword</param-name>
+    	<param-value>srp</param-value>
+    </context-param>
+    
+  <servlet>
+	<servlet-name>Login</servlet-name>
+	<servlet-class>Login</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+	<servlet-name>AddStudentDetails</servlet-name>
+	<servlet-class>AddStudentDetails</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>AddStudentDetails</servlet-name>
+    <url-pattern>/AddStudentDetails</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+	<servlet-name>AddFacultyDetails</servlet-name>
+	<servlet-class>AddFacultyDetails</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>AddFacultyDetails</servlet-name>
+    <url-pattern>/AddFacultyDetails</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+	<servlet-name>UpdateStudentDetails</servlet-name>
+	<servlet-class>UpdateStudentDetails</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>UpdateStudentDetails</servlet-name>
+    <url-pattern>/UpdateStudent</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+	<servlet-name>UpdateFacultyDetails</servlet-name>
+	<servlet-class>UpdateFacultyDetails</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>UpdateFacultyDetails</servlet-name>
+    <url-pattern>/UpdateFaculty</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+	<servlet-name>UpdateStudentRemarks</servlet-name>
+	<servlet-class>UpdateStudentRemarks</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>UpdateStudentRemarks</servlet-name>
+    <url-pattern>/UpdateStudentRemarks</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+	<servlet-name>AddTimeTable</servlet-name>
+	<servlet-class>AddTimeTable</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>AddTimeTable</servlet-name>
+    <url-pattern>/AddTimeTable</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+	<servlet-name>EditTimeTable</servlet-name>
+	<servlet-class>EditTimeTable</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>EditTimeTable</servlet-name>
+    <url-pattern>/EditTimeTable</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+	<servlet-name>AddNotificationDetails</servlet-name>
+	<servlet-class>AddNotificationDetails</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>AddNotificationDetails</servlet-name>
+    <url-pattern>/AddNotificationDetails</url-pattern>
+ </servlet-mapping>
+ <servlet>
+	<servlet-name>AddReportCardDetails</servlet-name>
+	<servlet-class>AddReportCardDetails</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>AddReportCardDetails</servlet-name>
+    <url-pattern>/AddReportCardDetails</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+	<servlet-name>AddStudentRemarks</servlet-name>
+	<servlet-class>AddStudentRemarks</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>AddStudentRemarks</servlet-name>
+    <url-pattern>/AddStudentRemarks</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+  <servlet>
+	<servlet-name>PasswordChange</servlet-name>
+	<servlet-class>PasswordChange</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>PasswordChange</servlet-name>
+    <url-pattern>/PasswordChange</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+	<servlet-name>PasswordChange1</servlet-name>
+	<servlet-class>PasswordChange1</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>PasswordChange1</servlet-name>
+    <url-pattern>/PasswordChange1</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+</web-app>
